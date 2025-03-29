@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Home</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <h1>My Blog</h1>
+    
+
+    
+  <!-- <div class="cssd">
+    <h2>Introduction</h2>
+   <p> Welcome to **My Blog**, a simple and intuitive web application where you can create, manage, and share your thoughts effortlessly. This platform allows users to write blog posts, edit content, and delete entries as needed. With a clean and user-friendly interface, you can easily navigate through your posts. The app also features a **"Show My Posts"** button, enabling you to toggle the visibility of your blog entries. Built with PostgreSQL for secure data storage and efficient retrieval, this blog ensures a smooth experience for users who want to document and share their ideas online. 🚀
+</p>
+</div> -->
+<div class="cssd">
+    <div class="text-container">
+        <h2>Introduction</h2>
+        <p>Welcome to <strong>My Blog</strong>, a simple and intuitive web application where you can create, manage, and share your thoughts effortlessly. This platform allows users to write blog posts, edit content, and delete entries as needed.</p>
+    </div>
+    <div class="image-container">
+        <img src="./header.png" alt="Blog Image">
+    </div>
+</div>
+<a href="/new">Create New Post</a>
+    
+<button id="togglePostsBtn">Show My Posts</button>
+
+    <!-- Hidden container for posts -->
+    <div id="postsContainer" style="display: none;"></div>
+<script src="script.js"></script>
+</body>
+</html>

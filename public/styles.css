@@ -1,0 +1,279 @@
+
+
+
+
+
+
+/* Global Styles */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("./header.png"); /* Path to background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: #bc2b2b;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: rgb(26, 209, 60);
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation Bar */
+nav {
+    background: #007BFF;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #0056b3;
+    border-radius: 5px;
+}
+
+/* Main Content */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+   
+    margin-bottom: 2rem;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 3px solid black;
+    border-radius: 5px;
+    width: -webkit-fill-available;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+form button:hover {
+    background: #218838;
+}
+
+/* List Styles */
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    
+
+}
+
+li {
+    background: rgb(225, 100, 100);
+    
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+li h2 {
+    margin: 0 0 10px;
+    color:black
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Blog Post List - Horizontal Layout */
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Makes items align in a row */
+    flex-wrap: wrap; /* Allows wrapping if there are many posts */
+    gap: 20px; /* Adds space between items */
+    justify-content: center; /* Centers the posts */
+}
+
+li:hover {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    
+    box-shadow: 0 0 10px rgba(223, 11, 11, 0.1);
+    text-align: center;
+    width: 300px; /* Set a fixed width for each blog post */
+    background-color: #f0f0f0; /* Changes background color */
+    
+    transform: translateY(-10px); 
+}
+/* Adjust Delete Button Alignment */
+li {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #dfded5e6;
+    padding: 15px;
+    border-radius: 3rem;
+    box-shadow: 0 0 10px rgba(231, 209, 209, 0.607);
+    text-align: center;
+    width: 300px; 
+    
+}
+
+/* Delete Button */
+.delete-button {
+    margin-top: 10px; /* Adds spacing between content and button */
+    width: 100px; /* Ensures button has a consistent width */
+    text-align: center;
+}
+#postsList {
+    display: none; /* Hide posts initially */
+}
+.button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .button-container a, 
+        .button-container button {
+            display: block;
+            width: 200px;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button-container button {
+            background-color: #28a745;
+        }
+
+        .button-container button:hover {
+            background-color: #218838;
+        }
+
+        .button-container a:hover {
+            background-color: #0056b3;
+        }
+        .cssd {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
+            /* Full viewport height */
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8); /* Light background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(245, 241, 241, 0.327);
+            margin: 5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cssd h2 {
+            font-size: 2.a5rem;
+            margin-bottom: 10px;
+            color: black;
+        }
+        
+        .cssd p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            line-height: 1.5;
+            color: black;
+            align-items:start;
+        }
+        .image-container img {
+            width: 100%;  /* Make it responsive */
+            max-width: 400px;  /* Restrict maximum width */
+            height: auto;
+            border-radius: 2rem; /* Automatically adjust height */
+        }
+        
+        
+        .k {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #ff4757; /* Red color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+        
+        .k:hover {
+            background-color: #e63946; /* Darker red on hover */
+        }
+        
